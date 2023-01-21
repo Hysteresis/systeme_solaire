@@ -5,7 +5,24 @@
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
                     <h2 class="card-title"><?php echo ucfirst($id)  ?></h2>
-                    <p><?php echo ucfirst($name)  ?> </p>
+                    <?php
+                        if (isset($aroundPlanet)) {
+                        echo "<p>" . ucfirst($id) . " tourne autour de : <span> " . ucfirst($aroundPlanet['planet']) . "</span></p>";
+                    }
+                    if ($bodyType != null) {
+                        echo "<p>type de corps : ";
+                        
+                        if ($bodyType == "Planet") {
+                            echo "Planète";
+                        }
+                        if ($bodyType == "Moon") {
+                            echo "Lune";
+                        }
+        
+                        echo "</p>";
+                    }
+                    ?>
+                    
                 </div>
             </div>
         </div>
@@ -21,6 +38,14 @@
                             foreach ($moons as $moon) {
                                 echo "<a href='" . $moon['rel'] . "'>" . $moon['moon'] . "</a><span>&nbsp;&nbsp;</span>";
                             }
+                        } else {
+                            echo "<h2>Acune lune</h2>";
+                            if (isset($aroundPlanet)) {
+
+
+                                echo "<p>" . ucfirst($id) . " tourne autour de : <span> " . ucfirst($aroundPlanet['planet']) . "</span></p>";
+                            }
+
                         }
                     ?>                    
                 </div>
@@ -41,28 +66,9 @@
             ?>
             <p>Gravité : <?= $gravity ?> m/s<sup>2</sup></p>
 
-            <?php
-
-            if ($bodyType != null) {
-                echo "<p>type de corps : ";
-                if ($bodyType == "Planet") {
-                    echo "Planète";
-                }
-                if ($bodyType == "Moon") {
-                    echo "Lune";
-                }
-
-                echo "</p>";
-            }
-            ?>
-            <?php
-            if (isset($aroundPlanet)) {
 
 
-                echo "<p>" . ucfirst($id) . " tourne autour de : <span> " . ucfirst($aroundPlanet['planet']) . "</span></p>";
-            }
-            ?>
-
+            
                 </div>
             </div>
         </div>

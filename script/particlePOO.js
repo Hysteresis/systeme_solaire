@@ -1,7 +1,3 @@
-// test de mon fichier js
-// document.getElementById("moon").innerHTML = '<img src="Moon.png" style="height: 100px; width: auto; display: block; margin-left: auto; margin-right: 50px " alt="">';
-//Fin du test
-
 const canvas = document.querySelector('#canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -38,11 +34,11 @@ function init() {
         let size = Math.random() * 1.5 + 0.1;
 
         // particule speciale planet top left
-        if (i == 50) {
-            x = 100;
-            y = 50;
-            size = 100;
-        }
+        // if (i == 50) {
+        //     x = 100;
+        //     y = 50;
+        //     size = 100;
+        // }
 
         particleArray.push(new Particle(x, y, size));
     }
