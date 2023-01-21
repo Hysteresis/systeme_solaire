@@ -19,6 +19,26 @@ body:before {
     z-index: -1;
 }
 
+.card{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card a {
+    color: whitesmoke;
+
+}
+
+.card a:hover {
+    color: rgb(247, 244, 89);
+}
+
+
 #cadre {
     background: linear-gradient(to right, rgba(4, 3, 70, 0.739), rgba(17, 5, 92, 0.76), rgba(17, 2, 109, 0.856));
 }

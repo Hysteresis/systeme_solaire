@@ -24,8 +24,12 @@ include './vue/search.php';
                 $vol = $valeur['vol'];
                 $gravity = $valeur['gravity'];
                 $bodyType = $valeur['bodyType'];
-                include './vue/search_result.php';
+                if (isset($valeur['aroundPlanet'])){
+                    $aroundPlanet = $valeur['aroundPlanet'];
+                }  
 
+
+                include './vue/search_result.php';
             }
         }
     }
