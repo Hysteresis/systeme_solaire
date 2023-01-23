@@ -26,6 +26,7 @@ include './vue/search.php';
                 $bodyType = $valeur['bodyType'];
                 if (isset($valeur['aroundPlanet'])){
                     $aroundPlanet = $valeur['aroundPlanet'];
+                    
                 }  
 
 

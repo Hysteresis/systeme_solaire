@@ -1,6 +1,6 @@
 
 <div class="container">
-    <div class="row mx-auto ">
+    <div class="row mx-auto  my-2">
         <div class="col-12 col-lg-12 d-flex justify-content-center">
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="row mx-auto ">
+    <div class="row mx-auto  my-2">
         <div class="col-12 col-lg-12 d-flex justify-content-center">
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
@@ -39,20 +39,25 @@
                                 echo "<a href='" . $moon['rel'] . "'>" . $moon['moon'] . "</a><span>&nbsp;&nbsp;</span>";
                             }
                         } else {
-                            echo "<h2>Acune lune</h2>";
+                            echo "<h2>Aucune lune</h2>";
                             if (isset($aroundPlanet)) {
+                                // $rel = Connexion_Api::getConnexion($aroundPlanet['rel']);
+                                $url = Connexion_Api::getConnexion($aroundPlanet['rel']);
+                                // var_dump($url);
+                                var_dump($aroundPlanet['rel']);
 
-
-                                echo "<p>" . ucfirst($id) . " tourne autour de : <span> " . ucfirst($aroundPlanet['planet']) . "</span></p>";
+                                // echo "<p>" . ucfirst($id) . " tourne autour de : <span><a href='" . $rel . "'>" . ucfirst($aroundPlanet['planet']) . "</a></span></p>";
                             }
 
                         }
-                    ?>                    
+                    ?>        
+                    
+                    <a href=""></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row mx-auto ">
+    <div class="row mx-auto  my-2">
         <div class="col-12 col-lg-12 d-flex justify-content-center">
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
@@ -75,8 +80,8 @@
     </div>
 
 
-<p><?php echo ucfirst($name)  ?> </p>
-<p><?php echo ucfirst($isPlanet)  ?> </p>
+<!-- <p><?php echo ucfirst($name)  ?> </p>
+<p><?php echo ucfirst($isPlanet)  ?> </p> -->
 
 
 </div>

@@ -19,14 +19,14 @@ body:before {
     z-index: -1;
 }
 
-.card{
+.card {
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .card a {
@@ -92,7 +92,7 @@ input {
 
 #navBar {
 
-    background-image: url(../Moon.png);
+    background-image: url(../img/Moon.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -114,16 +114,16 @@ input {
 
 }
 
-.sytemeSolaire{
+.sytemeSolaire {
     color: rgb(243, 243, 243);
     text-shadow:
-      0 0 5px rgb(0, 0, 0),
-      0 0 10px rgb(0, 0, 0),
-      0 0 20px rgb(3, 3, 3),
-      0 0 30px rgb(121, 121, 121),
-      0 0 40px rgb(219, 219, 219),
-      0 0 80px rgb(59, 236, 118),
-      0 0 90px rgb(74, 245, 7);
-      /* 0 0 100px rgb(35, 215, 41); */
-      /* 0 0 150px rgb(24, 247, 17); */
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(3, 3, 3),
+        0 0 30px rgb(121, 121, 121),
+        0 0 40px rgb(219, 219, 219),
+        0 0 80px rgb(59, 236, 118),
+        0 0 90px rgb(74, 245, 7);
+    /* 0 0 100px rgb(35, 215, 41); */
+    /* 0 0 150px rgb(24, 247, 17); */
 }
