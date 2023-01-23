@@ -17,9 +17,10 @@
 
     <?php
         include './vue/navbar.php';
-        include './controller/connexion_api_controller.php';
+        
         include './controller/search_controller.php';
 
+    
 
 
     ?>
