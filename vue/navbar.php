@@ -19,13 +19,13 @@
                     <a class="nav-link" href="lunes.php">Lunes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comet.php">Comètes</a>
+                    <a class="nav-link" href="index.php?uc=comet.">Comètes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="asteroid.php">Asteroïdes</a>
+                    <a class="nav-link" href="index.php?uc=asteroid">Asteroïdes</a>
                 </li>
                 <li class="nav-item"
-                    <a class="nav-link" href="etoile.php">Etoile</a>
+                    <a class="nav-link" href="index.php?uc=star">Etoile</a>
                 </li>
             </ul>
         </div>
