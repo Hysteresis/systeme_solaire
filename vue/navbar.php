@@ -10,19 +10,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Rechercher</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?uc=planet">Planètes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="lunes.php">Lunes</a>
+                    <a class="nav-link" href="lunes.php">Planètes naines</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?uc=comet.">Comètes</a>
+                <a class="nav-link" href="index.php?uc=asteroid">Asteroïdes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?uc=asteroid">Asteroïdes</a>
+                <a class="nav-link" href="index.php?uc=comet.">Comètes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?uc=star.php">Etoile</a>

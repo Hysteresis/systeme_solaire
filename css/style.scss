@@ -1,0 +1,227 @@
+// body {
+//     margin: 0;
+//     padding: 0;
+//     background-image: linear-gradient(to left, rgb(7, 1, 27), rgb(16, 5, 92), rgb(22, 7, 117));
+//     color: whitesmoke;
+//     background-attachment: fixed;
+//     z-index: -1;
+// }
+
+// body:before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     box-shadow: inset 50 50 2000px rgba(255, 255, 255, .15);
+//     filter: blur(10px);
+//     // z-index: -1;
+//     background-image: linear-gradient(to left, rgb(7, 1, 27), rgb(16, 5, 92), rgb(22, 7, 117));
+
+// }
+
+
+body {
+	display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(7, 1, 27), rgb(16, 5, 92), rgb(22, 7, 117));
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left, rgb(7, 1, 27), rgb(16, 5, 92), rgb(22, 7, 117));
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    z-index: -1;
+    // background-color: rgb(250, 14, 14);
+}
+
+.card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card a {
+    color: whitesmoke;
+
+}
+
+.card a:hover {
+    color: rgb(247, 244, 89);
+}
+
+
+#cadre {
+    background: linear-gradient(to right, rgba(4, 3, 70, 0.739), rgba(17, 5, 92, 0.76), rgba(17, 2, 109, 0.856));
+}
+
+#canvas1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+/* icone loupe */
+.fa-search {
+
+    color: #06ff8b;
+    margin-right: 10px;
+    margin-left: -50px;
+
+}
+
+
+input {
+    color: rgb(236, 236, 236);
+    background-color: #198754;
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+.link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+.link:hover {
+    color: rgb(1, 204, 255);
+}
+
+.navbar {
+
+    color: rgb(192, 201, 255);
+    opacity: 0.8;
+}
+
+#navBar {
+
+    background-image: url(../img/Moon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 200px 200px;
+    height: 100%;
+    width: 100%;
+    color: rgb(192, 201, 255);
+    opacity: 0.8;
+}
+
+
+#searchName {
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+
+    color: #09f587;
+    margin-left: 30px;
+    padding-left: 10px;
+
+}
+
+.sytemeSolaire {
+    color: rgb(243, 243, 243);
+    text-shadow:
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(3, 3, 3),
+        0 0 30px rgb(121, 121, 121),
+        0 0 40px rgb(219, 219, 219),
+        0 0 80px rgb(59, 236, 118),
+        0 0 90px rgb(74, 245, 7);
+    /* 0 0 100px rgb(35, 215, 41); */
+    /* 0 0 150px rgb(24, 247, 17); */
+}
+
+
+
+// carousel scss babel
+
+
+// Carousel configuration parameters
+$n: 8;
+$item-width: 400px;
+$item-separation: 80px;
+$viewer-distance: 500px;
+
+// Derived variables
+$theta: 2 * 3.141592653589793 / $n; 
+$apothem: 482.842712474619px;
+
+.carousel {
+	padding: 20px;
+
+	perspective: $viewer-distance;
+	overflow: hidden;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> * {
+		flex: 0 0 auto;
+	}
+	
+	figure {
+		margin: 0;
+		
+		width: $item-width;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+		transform-origin: 50% 50% (-$apothem);
+		
+		img {
+			width: 100%;
+			box-sizing: border-box;
+			// padding: 0 math.div($item-separation, 2);
+			
+			opacity: 0.9;
+			
+			&:not(:first-of-type) {
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform-origin: 50% 50% (-$apothem);
+			}
+			
+			@for $i from 2 through $n {
+				&:nth-child(#{$i}) {
+					transform: rotateY(#{($i - 1) * $theta}rad);
+				}
+			}
+		}
+	}
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		// margin: 20px 0 0;
+		
+		button {
+			flex: 0 0 auto;
+			margin: 0 5px;
+			
+			cursor: pointer;
+			
+			color: rgb(0, 0, 0);
+			background: #06ff8b;
+			border: 1px solid;
+			letter-spacing: 1px;
+			padding: 5px 10px;
+		}
+	}
+	
+}
+// fin carousel

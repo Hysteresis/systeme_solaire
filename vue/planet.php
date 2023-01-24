@@ -26,7 +26,7 @@
                         foreach ($rep['bodies'] as $cle => $valeur) {
                         $isPlanet = $valeur['isPlanet'];
                         if ($isPlanet) {
-                                echo "<a href='index.php?searchName=" .  $valeur['id'] . "'>". $valeur['name'] . "</a> <span>   &nbsp</span>";
+                                echo "<a href='index.php?searchName=" .  $valeur['id'] . "&uc=planet'>". $valeur['name'] . "</a> <span>   &nbsp</span>";
                             }
                         }
                     }

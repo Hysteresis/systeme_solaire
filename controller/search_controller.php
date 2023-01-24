@@ -1,5 +1,5 @@
 <?php
-include './vue/navbar.php';
+// include './vue/navbar.php';
 include './vue/search.php';
 include './manager/Connexion_Api.php';
 
