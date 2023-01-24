@@ -24,8 +24,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?uc=asteroid">Asteroïdes</a>
                 </li>
-                <li class="nav-item"
-                    <a class="nav-link" href="index.php?uc=star">Etoile</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?uc=star.php">Etoile</a>
                 </li>
             </ul>
         </div>

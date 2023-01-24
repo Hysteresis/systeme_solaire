@@ -75,18 +75,8 @@
             }
             ?>
             <p>Gravité : <?= $gravity ?> m/s<sup>2</sup></p>
-
-
-
-            
                 </div>
             </div>
         </div>
     </div>
-
-
-<!-- <p><?php echo ucfirst($name)  ?> </p>
-<p><?php echo ucfirst($isPlanet)  ?> </p> -->
-
-
 </div>
