@@ -16,13 +16,11 @@
     <canvas id="canvas1"></canvas>
 
     <?php
-        include './vue/navbar.php';
+
         
         include './controller/search_controller.php';
-
-    
-
-
+    // include './controller/' . $_GET['uc'] . '_controller.php';
+    include './controller/planet_controller.php';
     ?>
 
     <!-- script -->
