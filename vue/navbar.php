@@ -13,7 +13,7 @@
                     <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="vue/planet.php?uc=planet">Planètes</a>
+                    <a class="nav-link" href="index.php?uc=planet">Planètes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="lunes.php">Lunes</a>
@@ -24,7 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="asteroid.php">Asteroïdes</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"
                     <a class="nav-link" href="etoile.php">Etoile</a>
                 </li>
             </ul>

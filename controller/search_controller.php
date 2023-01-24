@@ -1,6 +1,6 @@
 <?php
-include './vue/navbar.php';
-include './vue/search.php';
+// include './vue/navbar.php';
+// include './vue/search.php';
 include './manager/Connexion_Api.php';
 
 $url = "https://api.le-systeme-solaire.net/rest/bodies/";
@@ -35,8 +35,6 @@ if (isset($_GET['searchName'])) {
             if (isset($valeur['aroundPlanet'])) {
                 $aroundPlanet = $valeur['aroundPlanet'];
             }
-
-            include './vue/search_result.php';
         }
     }
 }

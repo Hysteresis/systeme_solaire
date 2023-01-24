@@ -16,11 +16,20 @@
     <canvas id="canvas1"></canvas>
 
     <?php
-
+        include './vue/navbar.php';
         
-        include './controller/search_controller.php';
-    // include './controller/' . $_GET['uc'] . '_controller.php';
-    include './controller/planet_controller.php';
+        // include './controller/search_controller.php';
+        // include './controller/planet_controller.php';
+        // var_dump($_GET['uc']);
+        if (isset($_GET['uc'])){
+            
+                include './controller/' . $_GET['uc'] . '_controller.php';
+            
+        } else {
+            include './vue/search.php';
+            include './controller/search_controller.php';
+        }
+
     ?>
 
     <!-- script -->
