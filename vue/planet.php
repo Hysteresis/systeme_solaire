@@ -22,7 +22,7 @@
                 <div class="card-body">
                     <?php 
                     if(isset($reponse)){
-                        echo $reponse['knownCount'];
+                        // echo $reponse['knownCount'];
                         foreach ($rep['bodies'] as $cle => $valeur) {
                         $isPlanet = $valeur['isPlanet'];
                         if ($isPlanet) {

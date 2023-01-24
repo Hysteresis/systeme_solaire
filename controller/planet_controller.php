@@ -1,7 +1,7 @@
 <?php
 
 
-    include './manager/Connexion_Api.php';
+    // include './manager/Connexion_Api.php';
 
     $url = "https://api.le-systeme-solaire.net/rest/knowncount/planet";
     $reponse = Connexion_Api::getConnexion($url);

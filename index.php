@@ -19,7 +19,9 @@
 
         include './controller/search_controller.php';
         
-       
+        if(isset($_GET['uc']) && $_GET['uc'] == 'planet'  ){
+            include './controller/planet_controller.php';  
+        }
         // include './controller/planet_controller.php';
         // var_dump($_GET['uc']);
 
