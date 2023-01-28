@@ -3,12 +3,10 @@
         <div class="col-12 col-lg-12 d-flex justify-content-center">
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
-                    <h2 class="card-title">Les planètes</h2>
-                    <p>Nombre de planètes :
+                    <h2 class="card-title">Les planètes naines</h2>
+                    <p>
                         <?php
-                        if(isset($reponse)){
-                            echo $reponse['knownCount'];
-                        }
+                       
                             
                      
                      ?></p>
@@ -21,15 +19,17 @@
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
                     <?php 
-                    if(isset($reponse)){
-                        // echo $reponse['knownCount'];
-                        foreach ($bodies['bodies']  as  $valeur) {
-                        $isPlanet = $valeur['isPlanet'];
-                        if ($isPlanet) {
-                                echo "<a href='index.php?searchName=" .  $valeur['id'] . "&uc=planet'>". $valeur['name'] . "</a> <span>   &nbsp</span>";
+                        foreach ($reponses['bodies'] as $cle => $reponse) {
+                            $bodyType = $reponse['bodyType'];
+                            $name = ucfirst($reponse['id']);
+
+                            if(isset($bodyType)){
+                                if($bodyType == "Dwarf Planet"){
+                                    echo "<a href='' >" . $name . "</a>" . " ";
+ 
+                                }
                             }
                         }
-                    }
                     ?>
                 </div>
             </div>

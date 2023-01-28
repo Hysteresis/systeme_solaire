@@ -53,10 +53,6 @@ function init() {
         }
 
     }
-
-    console.log(particleArray[49]);
-    console.log(particleArray[50]);
-    console.log(particleArray[51]);
 }
 
 

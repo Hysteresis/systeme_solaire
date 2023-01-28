@@ -16,7 +16,7 @@
                     <a class="nav-link" href="index.php?uc=planet">Planètes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="lunes.php">Planètes naines</a>
+                    <a class="nav-link" href="index.php?uc=dwarfPlanet">Planètes naines</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="index.php?uc=asteroid">Asteroïdes</a>
