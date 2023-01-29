@@ -1,11 +1,10 @@
 <?php
 
-// echo " search controller";
-include_once('./manager/Connexion_Api.php');
+include('./manager/Connexion_Api.php');
 $urlBodies = "https://api.le-systeme-solaire.net/rest/bodies/";
 $reponse = Connexion_Api::getConnexion($urlBodies);
 
-include_once './manager/Bodies.php';
+include './manager/Bodies.php';
 $searchName = $_GET['searchName'];
 
 $rep = new Bodies();

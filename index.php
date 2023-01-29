@@ -21,13 +21,13 @@
     </div>
     <?php
     include './vue/navbar.php';
+    // barre de recherche
+    if (isset($_GET['searchName'])) {
+        include './controller/search_controller.php';
+    }
 
+    // router
     if (isset($_GET['uc'])) {
-
-        if (isset($_GET['searchName'])) {
-            include './controller/search_controller.php';
-           
-        }
 
         if ($_GET['uc'] == 'planet') {
             include './controller/planet_controller.php';

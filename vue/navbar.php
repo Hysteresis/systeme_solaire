@@ -28,9 +28,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?uc=star">Etoile</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.php?uc=home">Rechercher</a>
-                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.php?sear">Rechercher</a>
+                </li> -->
+                <form method="get" class="d-flex" action="index.php">
+                    <input class="form-control me-2" name="searchName" type="search" placeholder="Planète, comète, lune,..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                </form>
             </ul>
         </div>
     </div>
