@@ -3,7 +3,7 @@
         <div class="col-12 col-lg-12 d-flex justify-content-center">
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
-                    <h2 class="card-title">Les planètes naines</h2>
+                    <h2 class="card-title">Comètes</h2>
                     <p>
                         <?php
 
@@ -22,9 +22,8 @@
                     foreach ($bodies['bodies'] as $cle => $bodie) {
                         $bodie['bodyType'];
 
-
                         if (isset($bodie['bodyType'])) {
-                            if ($bodie['bodyType'] == "Dwarf Planet") {
+                            if ($bodie['bodyType'] == "Comet") {
                                 echo "<a href='?searchName=" .$bodie['id'] . "&uc=planet' >" . ucfirst($bodie['id'] ) .  "</a>" . " ";
                             }
                         }

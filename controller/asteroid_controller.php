@@ -11,7 +11,7 @@
     $rep = new Bodies();
     $bodies = $rep->get_all_bodies($urlBodies);
 
-    include './vue/dwarf_planet.php';
+    include './vue/asteroid.php';
 
 
 

@@ -9,15 +9,22 @@
                         // print_r( "<p>" . $bodies['name'] . " tourne autour de : <span> " . $bodies['aroundPlanet'] . "</span></p>");
                     }
                     if ($bodies['bodyType'] != null) {
-                        echo "<p>Type de corps : ";
+                        echo "<p>";
 
                         if ($bodies['bodyType'] == "Planet") {
                             echo "Planète";
                         }
+                        if ($bodies['bodyType'] == "Dwarf Planet") {
+                            echo "Planète naine";
+                        }
+
                         if ($bodies['bodyType'] == "Moon") {
                             echo "Lune";
                         }
 
+                        if ($bodies['bodyType'] == "Asteroid") {
+                            echo "Asteroïde";
+                        }
                         echo "</p>";
                     }
                     ?>

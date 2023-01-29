@@ -3,7 +3,7 @@
         <div class="col-12 col-lg-12 d-flex justify-content-center">
             <div class="card" style="width: 36rem;">
                 <div class="card-body">
-                    <h2 class="card-title">Les planètes naines</h2>
+                    <h2 class="card-title">Etoile</h2>
                     <p>
                         <?php
 
@@ -24,7 +24,7 @@
 
 
                         if (isset($bodie['bodyType'])) {
-                            if ($bodie['bodyType'] == "Dwarf Planet") {
+                            if ($bodie['bodyType'] == "Star") {
                                 echo "<a href='?searchName=" .$bodie['id'] . "&uc=planet' >" . ucfirst($bodie['id'] ) .  "</a>" . " ";
                             }
                         }

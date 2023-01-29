@@ -25,7 +25,6 @@
     if (isset($_GET['uc'])) {
 
         if (isset($_GET['searchName'])) {
-            echo "</br>index : je suis dabs uc=searchNAme</br>";
             include './controller/search_controller.php';
            
         }
@@ -37,6 +36,23 @@
         if ($_GET['uc'] == 'dwarfPlanet') {
             include './controller/dwarfPlanet_controller.php';
         }
+
+        if ($_GET['uc'] == 'asteroid') {
+            include './controller/asteroid_controller.php';
+        }
+        
+        if ($_GET['uc'] == 'comet') {
+            include './controller/comet_controller.php';
+        }
+    
+        if ($_GET['uc'] == 'star') {
+            include './controller/star_controller.php';
+        }
+
+        if ($_GET['uc'] == 'moon') {
+            include './controller/moon_controller.php';
+        }
+
     } else { //page par defaut d'accueil
         include "./controller/planet_controller.php";
     }

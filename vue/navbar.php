@@ -17,13 +17,16 @@
                     <a class="nav-link" href="index.php?uc=dwarfPlanet">Planètes naines</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="index.php?uc=moon">Lunes</a>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="index.php?uc=asteroid">Asteroïdes</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="index.php?uc=comet.">Comètes</a>
+                <a class="nav-link" href="index.php?uc=comet">Comètes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?uc=star.php">Etoile</a>
+                    <a class="nav-link" href="index.php?uc=star">Etoile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.php?uc=home">Rechercher</a>
