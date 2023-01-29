@@ -28,6 +28,7 @@
                             $isPlanet = $bodie['isPlanet'];
                             if ($isPlanet) {
                                 echo "<a href='index.php?searchName=" .  $bodie['id'] . "&uc=planet'>" . $bodie['name'] . "</a> <span>   &nbsp</span>";
+                               
                             }
                         }
                     }

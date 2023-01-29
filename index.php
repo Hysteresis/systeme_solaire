@@ -24,15 +24,17 @@
 
     if (isset($_GET['uc'])) {
 
-        if (isset($_GET['uc']) && $_GET['uc'] == 'home') {
-            include './controller/home_controller.php';
+        if (isset($_GET['searchName'])) {
+            echo "</br>index : je suis dabs uc=searchNAme</br>";
+            include './controller/search_controller.php';
+           
         }
 
-        if (isset($_GET['uc']) && $_GET['uc'] == 'planet') {
+        if ($_GET['uc'] == 'planet') {
             include './controller/planet_controller.php';
         }
 
-        if (isset($_GET['uc']) && $_GET['uc'] == 'dwarfPlanet') {
+        if ($_GET['uc'] == 'dwarfPlanet') {
             include './controller/dwarfPlanet_controller.php';
         }
     } else { //page par defaut d'accueil

@@ -1,5 +1,4 @@
 <?php
-    echo '</br>planet controller</br>';
 
     include_once('./manager/Connexion_Api.php');
     $url = "https://api.le-systeme-solaire.net/rest/knowncount/planet";
@@ -12,7 +11,5 @@
 
 
     include './vue/planet.php';
-
-
 
 ?>

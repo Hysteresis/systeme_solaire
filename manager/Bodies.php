@@ -12,6 +12,13 @@ class Bodies {
 
         return $reponses;
     }
+
+    public function get_id($id){
+        $urlBodie = "https://api.le-systeme-solaire.net/rest/bodies/" . $id;
+        $reponses = Connexion_Api::getConnexion($urlBodie);
+
+        return $reponses;
+    }
 }
 
 
