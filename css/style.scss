@@ -1,5 +1,5 @@
 body {
-	display: flex;
+    display: flex;
     flex-direction: column;
     // height: 100vh;
     justify-content: center;
@@ -53,18 +53,19 @@ body {
 
 }
 
-#imgAPI{
+#imgAPI {
     animation: myAnim 10s ease 0s 1 normal forwards;
     animation-iteration-count: infinite;
 }
-@keyframes myAnim {
-	0% {
-		transform: scale(0.9);
-	}
 
-	50% {
-		transform: scale(1);
-	}
+@keyframes myAnim {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
 
     100% {
         transform: scale(0.9);
@@ -107,12 +108,38 @@ input {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100px 100px;
-    
+
     height: 100%;
     width: 100%;
     color: rgb(192, 201, 255);
     opacity: 0.8;
 }
+
+
+.nav-link:hover {
+    text-decoration: underline overline;
+    text-underline-position: under;
+    text-underline-offset: 5px;
+    color: #f7dc54 !important;
+    animation: navbar 0.5s ease;
+}
+
+@keyframes navbar {
+    0% {
+        text-underline-offset: 8px;
+
+    }
+
+    50% {
+        text-underline-offset: 1px;
+    }
+
+    100% {
+        text-underline-offset: 5px;
+    }
+}
+
+
 
 
 #searchName {
@@ -135,11 +162,69 @@ input {
         0 0 30px rgb(121, 121, 121),
         0 0 40px rgb(219, 219, 219),
         0 0 80px rgb(59, 236, 118),
-        0 0 90px rgb(74, 245, 7);
-    /* 0 0 100px rgb(35, 215, 41); */
-    /* 0 0 150px rgb(24, 247, 17); */
+        0 0 90px rgb(73, 245, 7),
+        0 0 120px rgb(74, 245, 7),
+        0 0 150px rgb(50, 245, 7);
+    animation: blurEffect 8s infinite;
 }
 
+@keyframes blurEffect {
+    0%   {
+        text-shadow:         
+        0 0 5px rgb(0, 0, 0),
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(3, 3, 3),
+        0 0 30px rgb(121, 121, 121),
+        0 0 40px rgb(219, 219, 219),
+        0 0 80px rgb(59, 234, 118),
+        0 0 90px rgb(74, 245, 7),
+        0 0 120px rgb(74, 245, 7),
+        0 0 150px rgb(48, 243, 7);
+
+    }
+    25%  {
+        text-shadow:         
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(3, 3, 3),
+        0 0 30px rgb(121, 121, 121),
+        0 0 40px rgb(219, 219, 219),
+        0 0 80px rgb(59, 237, 118),
+        0 0 90px rgb(75, 245, 7),
+        0 0 120px rgb(74, 244, 7),
+        0 0 150px rgb(50, 245, 7);
+    }
+    75%  {
+        text-shadow:         
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(3, 3, 3),
+        0 0 30px rgb(121, 121, 121),
+        0 0 40px rgb(219, 219, 219),
+        0 0 80px rgb(59, 236, 118),
+        0 0 90px rgb(74, 245, 7),
+        0 0 120px rgb(74, 241, 7),
+        0 0 150px rgb(52, 245, 7);
+    }
+    100% {
+        text-shadow:         
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(0, 0, 0),
+        0 0 20px rgb(3, 3, 3),
+        0 0 30px rgb(121, 121, 121),
+        0 0 40px rgb(219, 219, 219),
+        0 0 80px rgb(59, 239, 118),
+        0 0 90px rgb(74, 245, 7),
+        0 0 120px rgb(74, 243, 7),
+        0 0 150px rgb(50, 245, 7);
+    }
+  }
+
+.sytemeSolaire:hover {
+    transform: scale(1.04);
+    transition: transform 220ms ease-in-out;
+}
 
 
 // carousel scss babel
@@ -160,36 +245,36 @@ input {
 
 // 	perspective: $viewer-distance;
 // 	overflow: hidden;
-	
+
 // 	display: flex;
 // 	flex-direction: column;
 // 	align-items: center;
 // 	> * {
 // 		flex: 0 0 auto;
 // 	}
-	
+
 // 	figure {
 // 		margin: 0;
-		
+
 // 		width: $item-width;
 // 		transform-style: preserve-3d;
 // 		transition: transform 0.5s;
 // 		transform-origin: 50% 50% (-$apothem);
-		
+
 // 		img {
 // 			width: 100%;
 // 			box-sizing: border-box;
 // 			// padding: 0 math.div($item-separation, 2);
-			
+
 // 			opacity: 0.9;
-			
+
 // 			&:not(:first-of-type) {
 // 				position: absolute;
 // 				left: 0;
 // 				top: 0;
 // 				transform-origin: 50% 50% (-$apothem);
 // 			}
-			
+
 // 			@for $i from 2 through $n {
 // 				&:nth-child(#{$i}) {
 // 					transform: rotateY(#{($i - 1) * $theta}rad);
@@ -197,18 +282,18 @@ input {
 // 			}
 // 		}
 // 	}
-	
+
 // 	nav {
 // 		display: flex;
 // 		justify-content: center;
 // 		// margin: 20px 0 0;
-		
+
 // 		button {
 // 			flex: 0 0 auto;
 // 			margin: 0 5px;
-			
+
 // 			cursor: pointer;
-			
+
 // 			color: rgb(255, 255, 255);
 // 			background: #198754;
 // 			// border: 1px solid;
@@ -217,6 +302,6 @@ input {
 // 			padding: 5px 10px;
 // 		}
 // 	}
-	
+
 // }
 // // fin carousel
