@@ -1,24 +1,24 @@
 <?php
 // include './vue/navbar.php';
-include './vue/search.php';
-include './manager/Connexion_Api.php';
+// include './vue/search.php';
+// include './manager/Connexion_Api.php';
 
 $url = "https://api.le-systeme-solaire.net/rest/bodies/";
 
+echo " search controller";
 
-
-if (isset($_GET['searchName'])) {
+if (isset($_GET['search'])) {
     //nettoyer les espaces dans la saisie
-    $searchName = trim($_GET['searchName']);
-    $searchName = strtolower($_GET['searchName']);
+    $search = trim($_GET['search']);
+    $search = strtolower($_GET['search']);
     $reponse = Connexion_Api::getConnexion($url);
     //URL a laquelle on fait la demande et qui renverra une réponse
-
-    $url = $url . $searchName;
+    echo "search controller" ;
+    $url = $url . $search;
 
     foreach ($reponse['bodies'] as $cle => $valeur) {
         
-        if ($searchName == $valeur['id']) {
+        if ($search == $valeur['id']) {
             $id = $valeur['id'];
             $name = $valeur['name'];
             $isPlanet = $valeur['isPlanet'];
@@ -37,5 +37,5 @@ if (isset($_GET['searchName'])) {
     include './vue/search_result.php';
 }
 
-
+// include './vue/search_result.php';
 ?>

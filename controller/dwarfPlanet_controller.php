@@ -2,8 +2,7 @@
 
     // $url = "https://api.le-systeme-solaire.net/rest/knowncount/planet";
     // $reponse = Connexion_Api::getConnexion($url);
-
-
+    include_once('./manager/Connexion_Api.php');
     $urlBodies = "https://api.le-systeme-solaire.net/rest/bodies/";
     $reponses = Connexion_Api::getConnexion($urlBodies);
     

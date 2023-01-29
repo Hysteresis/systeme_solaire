@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,6 @@
     <script src="https://kit.fontawesome.com/1891b42c16.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -19,18 +17,26 @@
     <canvas id="canvas1"></canvas>
     <!-- <div class="spinner-border spinner text-danger" id="spinner" role="status"> -->
 
-        <!-- <span class="visually-hidden">Loading...</span> -->
+    <!-- <span class="visually-hidden">Loading...</span> -->
     </div>
     <?php
     include './vue/navbar.php';
-    include './controller/search_controller.php';
 
-    if (isset($_GET['uc']) && $_GET['uc'] == 'planet') {
-        include './controller/planet_controller.php';
-    }
+    if (isset($_GET['uc'])) {
 
-    if (isset($_GET['uc']) && $_GET['uc'] == 'dwarfPlanet') {
-        include './controller/dwarfPlanet_controller.php';
+        if (isset($_GET['uc']) && $_GET['uc'] == 'home') {
+            include './controller/home_controller.php';
+        }
+
+        if (isset($_GET['uc']) && $_GET['uc'] == 'planet') {
+            include './controller/planet_controller.php';
+        }
+
+        if (isset($_GET['uc']) && $_GET['uc'] == 'dwarfPlanet') {
+            include './controller/dwarfPlanet_controller.php';
+        }
+    } else { //page par defaut d'accueil
+        include "./controller/planet_controller.php";
     }
 
     ?>
