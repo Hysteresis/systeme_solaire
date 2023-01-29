@@ -53,6 +53,23 @@ body {
 
 }
 
+#imgAPI{
+    animation: myAnim 10s ease 0s 1 normal forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.9);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+    100% {
+        transform: scale(0.9);
+    }
+}
 
 input {
     color: rgb(236, 236, 236);

@@ -47,6 +47,36 @@ body {
   margin-left: -50px;
 }
 
+#imgAPI {
+  -webkit-animation: myAnim 10s ease 0s 1 normal forwards;
+          animation: myAnim 10s ease 0s 1 normal forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes myAnim {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
 input {
   color: rgb(236, 236, 236);
   background-color: #198754;

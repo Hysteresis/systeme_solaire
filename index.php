@@ -54,7 +54,7 @@
         }
 
     } else { //page par defaut d'accueil
-        include "./controller/planet_controller.php";
+        include './vue/home.php';
     }
 
     ?>
